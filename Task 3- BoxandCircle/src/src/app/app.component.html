@@ -1,0 +1,20 @@
+<hello name="{{ name }}"></hello>
+
+
+<div class="wrapper">
+  <app-box></app-box>
+  <app-circle></app-circle>
+  <app-box></app-box>
+  <app-circle></app-circle>
+  <app-box></app-box>
+  <app-circle></app-circle>
+  <app-box></app-box>
+  <app-circle></app-circle>
+</div>
+
+<div class="actions">
+  <div class="inputs" id="newTodo">
+    Box: <input (keyup.enter)="change()" [(ngModel)]="newTodoVal">    
+    Circle: <input (keyup.enter)="changeC()" [(ngModel)]="TodoVal">
+  </div>
+  
