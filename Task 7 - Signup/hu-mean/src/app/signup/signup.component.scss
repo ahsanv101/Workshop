@@ -1,0 +1,18 @@
+.signup-page {
+    margin: 40px auto;
+    max-width: 500px;
+    background: #eee;
+    padding: 40px;
+    .heading {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .form-field-full {
+      width: 100%;
+      mat-form-field {
+        width: 100%;
+      }
+    }
+  }
+  

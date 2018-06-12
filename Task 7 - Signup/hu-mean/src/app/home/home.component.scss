@@ -1,0 +1,19 @@
+.home {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  background: #eee;
+
+  .info {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 32px;
+  }
+  .links {
+    .link-item {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
