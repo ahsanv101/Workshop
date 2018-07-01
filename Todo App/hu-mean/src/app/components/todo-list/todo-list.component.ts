@@ -1,6 +1,6 @@
 import { Component, OnInit, Input,  EventEmitter, Output } from '@angular/core';
 import { Todo } from '../../models/todo';
-import { Delete } from '../../models/delete';
+// import { Delete } from '../../models/delete';
 
 
 @Component({

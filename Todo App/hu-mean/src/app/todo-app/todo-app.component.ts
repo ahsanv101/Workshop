@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoService } from '../services/todo.service';
 import { Todo } from '../models/todo';
-import { Delete } from '../models/delete';
+// import { Delete } from '../models/delete';
 
 @Component({
   selector: 'ta-todo-app',
