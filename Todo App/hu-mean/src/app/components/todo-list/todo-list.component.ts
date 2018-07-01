@@ -11,6 +11,12 @@ import { Delete } from '../../models/delete';
 export class TodoListComponent implements OnInit {
   @Input() list: Todo[] = [];
   i = 0;
+  todos;
+  text = ' ';
+  tasks;
+  placeholderVal = 'Enter task';
+  val: string;
+  obj: string;
   @Output() todoDel= new EventEmitter<any>();
   constructor() { }
 
@@ -18,9 +24,23 @@ export class TodoListComponent implements OnInit {
 
   }
 
-  removeitem(i){
-    this.i=i;
-    this.todoDel.emit(this.i);
-    this.list.splice(i,1);
-    }
+  // removeitem(i){
+  //   this.i=i;
+  //   this.todoDel.emit(this.i);
+  //   this.list.splice(i,1);
+  //   }
+    removeItem(todoText) {
+      for ( let i = 0; i < this.tasks.length; i++) {
+         if ( this.tasks[i].text === todoText) {
+             this.tasks.splice(i, 1);
+           }
+      }
+      this.val = JSON.stringify(this.tasks);
+       localStorage.setItem('tasks', this.val);
+       this.obj = localStorage.getItem('tasks');
+       this.todos = JSON.parse(this.obj);
+     }
+     clearSearch() {
+       this.text = ' ';
+     }
 }

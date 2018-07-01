@@ -20,25 +20,25 @@ export class TodoAppComponent implements OnInit {
       });
   }
 
-  addNewTodo(newTodoText) {
-    const newTodo = {
-      name: newTodoText,
-      completed: false
-    };
-    this.todoService.addTodo(newTodo)
-      .subscribe((todo: Todo) => {
-        this.todoList.push(todo);
-      });
-  }
-  DelNewTodo(i) {
-    const Dele={
-      _id: i
-    };
-    this.todoService.delTodo(Dele)
-      .subscribe((any) => {
-        this.todoList.splice(i,1);
-      });
-  }
+  // addNewTodo(newTodoText) {
+  //   const newTodo = {
+  //     name: newTodoText,
+  //     completed: false
+  //   };
+  //   this.todoService.addTodo(newTodo)
+  //     .subscribe((todo: Todo) => {
+  //       this.todoList.push(todo);
+  //     });
+  // }
+  // DelNewTodo(i) {
+  //   const Dele={
+  //     _id: i
+  //   };
+  //   this.todoService.delTodo(Dele)
+  //     .subscribe((any) => {
+  //       this.todoList.splice(i,1);
+  //     });
+  // }
 
 
 }

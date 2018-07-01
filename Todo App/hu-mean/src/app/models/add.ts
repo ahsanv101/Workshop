@@ -1,5 +1,5 @@
-export interface Todo {
+export interface Todos
+{
   name: string;
   completed: boolean;
-  _id: string;
 }

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost/todoapp');
-mongoose.connect('mongodb://ahsan:123abc@ds023445.mlab.com:23445/mango');
+mongoose.connect('mongodb://ahsan2:123abc@ds117101.mlab.com:17101/hbu-app');
 
 let db = mongoose.connection;
 
